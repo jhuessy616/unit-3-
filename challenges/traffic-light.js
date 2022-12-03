@@ -48,7 +48,7 @@ lightCurrent = "red light";
 // console.log("Your current light is " + lightCurrent);
 function changeLight(newLight) {
     let possibleLights = lightStates[lightCurrent];
-  if (possibleLights.includes(newLight)) {
+  if (possible.includes(newLight)) {
     lightCurrent = newLight;
   }
   else {
@@ -56,7 +56,7 @@ function changeLight(newLight) {
       yellow +
       "What you typed in is not a valid option. Valid options are the following... " + color(possibleLights[0]) +
       possibleLights + white);
-  
+    console.log(possibleLights);
   
         
 }

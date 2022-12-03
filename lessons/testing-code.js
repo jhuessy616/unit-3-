@@ -25,3 +25,6 @@ let Alice = + "9"
 
 console.log(Julia);
 console.log(Alice); 
+
+
+console.log()
