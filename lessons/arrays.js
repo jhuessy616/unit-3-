@@ -216,3 +216,49 @@ console.log(fruits4.slice(1, 3)); //=> [ 'banana', 'cherry' ]
 // this means "slice from item 2 to the end"
 let fruits5 = ["apple", "banana", "cherry", "date", "elderberry"];
 console.log(fruits5.slice(2)); //=> [ 'cherry', 'date', 'elderberry' ]
+
+
+// !job question add without using push
+let nameArray = ["Jonas", "Isaac", "Leif",]
+
+nameArray[0] = "Lauren"
+// will replace 
+
+nameArray[nameArray.length] = "Paul"
+// will add new without push 
+
+
+nameArray.push("Elena")
+// does the same thing 
+console.log(nameArray);
+
+// what if we can't use length 
+function length(nameArray) {
+    let count = 1
+    for (i in nameArray) {
+        count++
+    }
+    return count
+}
+
+length(nameArray)
+nameArray[nameArray[length(nameArray)]] = "Julia"
+console.log(nameArray)
+
+// let arr = ["Jonas", "Isaac", "Leif",]
+
+// arr[0] = "Lauren"
+
+// function length(arr) {
+//     let count = 1
+//     for (i in arr) {
+//         count++
+//     }
+//     return count
+// }
+
+// length(arr)
+// arr[arr[length(arr)]] = "Paul"
+// console.log(arr)
+
+// arr.push("Elena")
